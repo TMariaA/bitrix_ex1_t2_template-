@@ -41,7 +41,7 @@ $noImg = SITE_TEMPLATE_PATH."/img/rew/no_photo.jpg";
                     <div class="name-block"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?echo $arItem["NAME"]?></a></div>
                     <div class="pos-block"><?=$arItem["DISPLAY_PROPERTIES"]["POSITION"]["VALUE"]?>,"<?=$arItem["DISPLAY_PROPERTIES"]["COMPANY"]["VALUE"]?>"</div>
                 </div>
-                <div class="text-block"><?= TruncateText($arItem["PREVIEW_TEXT"],150);?>
+                <div class="text-block"><?=$arItem["PREVIEW_TEXT"];?>
                 </div>
             </div>
         </div>
